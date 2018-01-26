@@ -1,0 +1,16 @@
+spring:
+ mvc:
+  favicon:
+    enabled: false # 关闭Favicon
+ profiles:
+   include: mysql
+########################################################
+###THYMELEAF (ThymeleafAutoConfiguration)
+########################################################
+ thymeleaf:
+   prefix: classpath:/templates/
+   suffix: .html
+   mode: HTML5
+   encoding: UTF-8
+   content-type: text/html
+   cache: false # 开发的时候关闭Thymeleaf缓存 set to false for hot refresh
