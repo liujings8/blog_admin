@@ -1,5 +1,6 @@
 package com.phantom.blog.build.jpa;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
@@ -9,7 +10,7 @@ import javax.persistence.Id;
  * @Author: phantom
  * @Created: 2018/1/25 11:32
  */
-//@Entity
+@Entity
 public class Demo {
     @Id
     @GeneratedValue
