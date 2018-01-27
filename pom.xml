@@ -30,6 +30,44 @@
         <h2.version>1.4.196</h2.version>
     </properties>
 
+    <profiles>
+        <profile>
+            <id>db-mysql</id>
+            <properties>
+                <profiles.activation>db-mysql</profiles.activation>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>mysql</groupId>
+                    <artifactId>mysql-connector-java</artifactId>
+                    <!--不写则使用默认的版本-->
+                    <!--默认为5.1.44-->
+                    <!--<version>${mysql.connector.version}</version>-->
+                    <scope>runtime</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>db-h2</id>
+            <properties>
+                <profiles.activation>db-h2</profiles.activation>
+            </properties>
+            <dependencies>
+                <dependency>
+                    <groupId>com.h2database</groupId>
+                    <artifactId>h2</artifactId>
+                    <!--不写则使用默认的版本-->
+                    <!--默认版本为1.4.196-->
+                    <!--<version>${h2.version}</version>-->
+                    <scope>runtime</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -47,22 +85,6 @@
             <groupId>com.vladsch.flexmark</groupId>
             <artifactId>flexmark-all</artifactId>
             <version>${flexmark.version}</version>
-        </dependency>
-        <!--<dependency>-->
-            <!--<groupId>com.h2database</groupId>-->
-            <!--<artifactId>h2</artifactId>-->
-            <!--不写则使用默认的版本-->
-            <!--默认版本为1.4.196-->
-            <!--<version>${h2.version}</version>-->
-            <!--<scope>runtime</scope>-->
-        <!--</dependency>-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <!--不写则使用默认的版本-->
-            <!--默认为Mysql5-->
-            <!--<version>${mysql.connector.version}</version>-->
-            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
