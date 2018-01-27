@@ -3,7 +3,7 @@ spring:
   favicon:
     enabled: false # 关闭Favicon
  profiles:
-   include: mysql
+   include: h2
 ########################################################
 ###THYMELEAF (ThymeleafAutoConfiguration)
 ########################################################
