@@ -1,4 +1,4 @@
-package com.phantom.test.hello;
+package com.phantom.blog.build.hello;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.stereotype.Controller;

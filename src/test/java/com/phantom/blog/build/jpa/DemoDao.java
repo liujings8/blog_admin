@@ -1,4 +1,4 @@
-package com.phantom.test.jpa;
+package com.phantom.blog.build.jpa;
 
 import org.springframework.data.repository.CrudRepository;
 

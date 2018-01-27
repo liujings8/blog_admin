@@ -1,4 +1,4 @@
-package com.phantom.test.template;
+package com.phantom.blog.build.template;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;

@@ -1,4 +1,4 @@
-package com.phantom.test.flexmark;
+package com.phantom.blog.build.flexmark;
 
 import com.vladsch.flexmark.ast.Node;
 import com.vladsch.flexmark.html.HtmlRenderer;

@@ -1,4 +1,4 @@
-package com.phantom.test.jpa;
+package com.phantom.blog.build.jpa;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
